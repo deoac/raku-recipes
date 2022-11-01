@@ -15,7 +15,7 @@ our %calories-table is export;
 our @products is export;
 
 #| Gets all recipes in the tree
-sub recipes( $dir = "recipes/") is export {
+multi sub recipes( $dir = "recipes/") is export {
     my @files = gather for dir($dir) -> $f {
         if ( $f.IO.f ) {
             take $f
