@@ -17,7 +17,7 @@ sub tree( $dir ) {
         if ( $f.IO.f ) {
             take $f
         } else {
-            take tree($f);
+            take tree($f).List.flat;
         }
     }
     return @files;
