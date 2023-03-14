@@ -49,6 +49,9 @@
     "X::Raku::Recipes::Missing": "lib/X/Raku/Recipes/Missing.pm6",
     "X::RecipeMark": "lib/X/RecipeMark.pm6"
   },
+  "resources": [
+    ".DS_Store"
+  ],
   "license": "Artistic-2.0",
   "tags": [
     "book",
